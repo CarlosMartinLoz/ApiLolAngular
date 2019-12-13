@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import{PrincipalComponent} from "./principal/principal.component"
+import {DashboardComponent} from "./dashboard/dashboard.component";
 
-const routes: Routes = [{path:"",component:PrincipalComponent}];
+const routes: Routes = [{path:"hola",component:DashboardComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class DashboardRoutingModule { }
