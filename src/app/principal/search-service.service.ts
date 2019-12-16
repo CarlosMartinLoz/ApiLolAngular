@@ -6,7 +6,7 @@ import User from "../Entitys/User";
   providedIn: 'root'
 })
 export class SearchService {
-  private uri:string = "http://192.168.1.104:8080/user/";
+  private uri:string = "http://localhost:8080/user/";
   constructor(private http:HttpClient) { }
 
   fetchUser(username:any):Observable<User>{

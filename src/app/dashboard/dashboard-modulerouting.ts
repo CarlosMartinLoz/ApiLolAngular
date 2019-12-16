@@ -8,7 +8,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 
 const routes: Routes = [
   {path:"campeones",component:CampeonesComponent},
-  {path:"dashboard",component:DashboardComponent},
+  {path:"dashboard/:nombre",component:DashboardComponent},
   {path:"estadisticas",component:EstadisticasComponent},
   {path:"partidas",component:PartidasComponent},
   {path:"perfil",component:PerfilComponent}

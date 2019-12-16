@@ -11,15 +11,15 @@
                     <img src="https://avatarfiles.alphacoders.com/897/89770.jpg" alt="profile-image" class="profile" />
                 </div>
                 <div class="card-content">
-                    <h2>Justin Mccoy<small>GOLD IV</small></h2>
+                    <h2>{{user.name}}<small>{{user.rankStats.tier}}  {{user.rankStats.rank}}</small></h2>
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-8">
                                 <canvas id="doughnut"></canvas>
                             </div>
                             <div>
-                                Wins:
-                                Loses:
+                                Wins:{{user.rankStats.wins}}
+                                Loses:{{user.rankStats.losses}}
                             </div>
                         </div>
                     </div>

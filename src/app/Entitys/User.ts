@@ -7,6 +7,6 @@ export default class User{
     level:number;
     accountId:string;
     id:string;
-    champions:Champion;
+    champions:Champion[];
     rankStats:RankStats
 }

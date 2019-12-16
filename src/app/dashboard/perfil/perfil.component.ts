@@ -22,7 +22,7 @@ export class PerfilComponent implements OnInit {
     ]
 };
   constructor() { 
-
+  
   }
 
   ngOnInit() {
@@ -42,8 +42,8 @@ export class PerfilComponent implements OnInit {
       },
       data: {
 				datasets: [{
-					data: [25,15],
-					backgroundColor: ["red","orange","yellow","green","blue"],
+					data: [this.user.rankStats.wins,this.user.rankStats.losses],
+					backgroundColor: ["yellow","orange","yellow","green","blue"],
 					label: 'Dataset 1'
 				}],
 		
