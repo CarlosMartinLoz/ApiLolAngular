@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {Chart} from "chart.js";
-import {PassDataUserService} from "../../ExchangeDataServices/pass-data-user.service"
+
 import User from 'src/app/Entitys/User';
 @Component({
   selector: 'app-perfil',
@@ -8,8 +8,8 @@ import User from 'src/app/Entitys/User';
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent implements OnInit {
+  @Input() user:User;
 
-  public user:User;
   doughnut: any;
   data = {
     datasets: [{
@@ -21,9 +21,8 @@ export class PerfilComponent implements OnInit {
         'Blue'
     ]
 };
-  constructor(private bridgeService:PassDataUserService) { 
-    bridgeService.currentMessage.subscribe(userData=>{this.user=userData;
-    console.log(this.user)});
+  constructor() { 
+
   }
 
   ngOnInit() {

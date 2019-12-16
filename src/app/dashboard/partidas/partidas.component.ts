@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import User from 'src/app/Entitys/User';
 
 @Component({
   selector: 'app-partidas',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./partidas.component.css']
 })
 export class PartidasComponent implements OnInit {
-
+  @Input() user:User;
   constructor() { }
 
   ngOnInit() {
