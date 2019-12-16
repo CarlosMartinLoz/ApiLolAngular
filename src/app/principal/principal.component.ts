@@ -21,7 +21,8 @@ export class PrincipalComponent implements OnInit {
 
   onSearch(){
     console.log(this.playerName);
-    this.searchService.fetchUser(this.playerName).subscribe(data=>this.bridgeService.sendMessage(data));
+    this.searchService.fetchUser(this.playerName).subscribe(data=>{this.bridgeService.sendMessage(data);
+    console.log(data)});
   }
 
   onTip(){
