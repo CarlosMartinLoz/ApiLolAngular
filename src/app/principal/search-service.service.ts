@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import { Observable } from 'rxjs';
+import User from "../Entitys/User";
 @Injectable({
   providedIn: 'root'
 })
 export class SearchService {
-  url:string;
-  constructor(private http:HttpClient) { 
-    this.url="http://localhost:8080/matches/14kVWlnr-rj2aq2lcrkyyAfGqeqi7y5uGyJI6siBPvfUzA";
-  }
+  private uri:string = "http://localhost:8080/user/";
+  constructor(private http:HttpClient) { }
 
-  onSearch(username:string):Observable<any[]>{
-    return this.http.get<any[]>(this.url);
+  fetchUser(username:any):Observable<User>{
+    return this.http.get<User>(this.uri.concat(username.nombre));
   }
 }
