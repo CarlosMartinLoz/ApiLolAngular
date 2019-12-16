@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-import { Component, OnInit } from '@angular/core';
-
-=======
 import { Component, OnInit, Input } from '@angular/core';
 import {Chart} from "chart.js";
 import User from 'src/app/Entitys/User';
->>>>>>> origin/master
 @Component({
   selector: 'app-campeones',
   templateUrl: './campeones.component.html',
@@ -13,11 +8,6 @@ import User from 'src/app/Entitys/User';
 })
 export class CampeonesComponent implements OnInit {
 
-<<<<<<< HEAD
-  constructor() { }
-
-  ngOnInit() {
-=======
   @Input() user:User;
   doughnut: any;
   constructor() { }
@@ -46,7 +36,6 @@ export class CampeonesComponent implements OnInit {
 		
 			}
     })
->>>>>>> origin/master
   }
 
 }

@@ -1,24 +1,13 @@
-<<<<<<< HEAD
-import { Component, OnInit } from '@angular/core';
-
-=======
 import { Component, OnInit, Input } from '@angular/core';
 import {Chart} from "chart.js";
 
 import User from 'src/app/Entitys/User';
->>>>>>> origin/master
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent implements OnInit {
-<<<<<<< HEAD
-
-  constructor() { }
-
-  ngOnInit() {
-=======
   @Input() user:User;
 
   doughnut: any;
@@ -60,7 +49,6 @@ export class PerfilComponent implements OnInit {
 		
 			}
     })
->>>>>>> origin/master
   }
 
 }
