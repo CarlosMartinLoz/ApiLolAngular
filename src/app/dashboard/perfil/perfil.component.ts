@@ -51,4 +51,11 @@ export class PerfilComponent implements OnInit {
     })
   }
 
+  ngOnChanges(changes: any) {
+
+    // You can also use categoryId.previousValue and 
+    // categoryId.firstChange for comparing old and new values
+
+}
+
 }

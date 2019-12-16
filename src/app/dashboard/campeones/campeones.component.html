@@ -1,12 +1,25 @@
-<div class="row">
+<div class="row profile-size">
     <div class="col-md-12">
-        <ul class="list-group">
-            <li class="list-group-item" style="background: whitesmoke;">Cras justo odio</li>
-            <li class="list-group-item">{{user.champions[1].championName}}</li>
-            <li class="list-group-item">{{user.champions[2].championName}}</li>
-            <li class="list-group-item">{{user.champions[3].championName}}</li>
-            <li class="list-group-item">{{user.champions[4].championName}}</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-        </div>
+      <div class="row">
+        <!--Profile Card 5-->
+    		<div class="col-md-4 mt-4" *ngFor="let champion of user.champions">
+          
+          <div class="card profile-card-5">
+              <div class="card-img-block">
+                  <img class="card-img-top" src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{champion.championName}}_0.jpg" alt="Card image cap">
+              </div>
+                  <div class="card-body pt-0">
+                  <h5 class="card-title">{{champion.championName}}</h5>
+                  <p class="card-text">{{champion.championPoints}} Puntos</p>
+                  
+                </div>
+              </div>
+              <p class="mt-3 w-100 float-left text-center"><strong>Level: {{champion.championLevel}}</strong></p>
+      </div>
+    </div>
+      
+    </div>
 </div>
+  
+
+

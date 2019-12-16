@@ -10,6 +10,7 @@ export class SearchService {
   constructor(private http:HttpClient) { }
 
   fetchUser(username:any):Observable<User>{
+    console.log(this.uri.concat(username.nombre));
     return this.http.get<User>(this.uri.concat(username.nombre));
   }
 }

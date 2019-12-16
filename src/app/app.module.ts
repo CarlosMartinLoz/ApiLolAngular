@@ -11,10 +11,12 @@ import {DashboardModule} from "./dashboard/dashboard.module";
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    PrincipalComponent,
+    PrincipalComponent
+    
     
   ],
   imports: [

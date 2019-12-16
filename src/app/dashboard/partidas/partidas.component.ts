@@ -8,7 +8,9 @@ import User from 'src/app/Entitys/User';
 })
 export class PartidasComponent implements OnInit {
   @Input() user:User;
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit() {
   }

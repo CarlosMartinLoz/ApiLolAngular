@@ -9,6 +9,7 @@ export class UserInformationService {
   constructor(private http:HttpClient) { }
 
   fetchUser(username:string){
+    
     this.http.get<User>(this.uri+username);
   }
 }
