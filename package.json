@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "api-lol",
+=======
+  "name": "angular-api-lol",
+>>>>>>> origin/master
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,9 +23,13 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+<<<<<<< HEAD
     "@syncfusion/ej2-angular-charts": "^17.3.34",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
+=======
+    "chart.js": "^2.9.3",
+>>>>>>> origin/master
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

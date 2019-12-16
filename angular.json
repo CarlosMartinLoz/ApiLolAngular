@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "ApiLol": {
+=======
+    "AngularApiLol": {
+>>>>>>> origin/master
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/ApiLol",
+=======
+            "outputPath": "dist/AngularApiLol",
+>>>>>>> origin/master
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -21,6 +29,7 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
+<<<<<<< HEAD
               "src/assets",
               
             ],
@@ -31,6 +40,14 @@
             ],
             "scripts": ["./node_modules/jquery/dist/jquery.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js"]
+=======
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+>>>>>>> origin/master
           },
           "configurations": {
             "production": {
@@ -67,18 +84,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "ApiLol:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "ApiLol:build:production"
+=======
+            "browserTarget": "AngularApiLol:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "AngularApiLol:build:production"
+>>>>>>> origin/master
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "ApiLol:build"
+=======
+            "browserTarget": "AngularApiLol:build"
+>>>>>>> origin/master
           }
         },
         "test": {
@@ -115,15 +144,34 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "ApiLol:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "ApiLol:serve:production"
+=======
+            "devServerTarget": "AngularApiLol:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "AngularApiLol:serve:production"
+>>>>>>> origin/master
             }
           }
         }
       }
+<<<<<<< HEAD
     }},
   "defaultProject": "ApiLol"
+=======
+    }
+  },
+  "defaultProject": "AngularApiLol",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
+>>>>>>> origin/master
 }

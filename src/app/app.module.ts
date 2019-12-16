@@ -8,7 +8,10 @@ import {HttpClientModule} from "@angular/common/http";
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import {DashboardModule} from "./dashboard/dashboard.module";
+<<<<<<< HEAD
 import {AccumulationChartModule} from "@sys"
+=======
+>>>>>>> origin/master
 
 
 @NgModule({
