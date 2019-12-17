@@ -16,7 +16,7 @@ export class PrincipalComponent implements OnInit {
   constructor(private searchService:SearchService
               , private bridgeService:PassDataUserService
               ,private router: Router) {
-    this.playerName={nombre:"Feizan"}
+    
    }
 
   ngOnInit() {
