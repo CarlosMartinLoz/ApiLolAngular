@@ -3,6 +3,7 @@ import { Router } from "@angular/router";
 import User from 'src/app/Entitys/User';
 import { SearchService } from 'src/app/principal/search-service.service';
 import { PassDataUserService } from 'src/app/ExchangeDataServices/pass-data-user.service';
+import { FormGroup, FormControl } from '@angular/forms';
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -11,25 +12,27 @@ import { PassDataUserService } from 'src/app/ExchangeDataServices/pass-data-user
 export class NavBarComponent implements OnInit {
   buscarName:any;
   response: User;
+  form:FormGroup = new FormGroup({
+    nombre: new FormControl("")
+  });
 
   constructor(private searchService: SearchService
     , private bridgeService: PassDataUserService
     , private router: Router) {
-    this.buscarName = { nombre: "Juankos" }
+  
   }
 
   ngOnInit() {
   }
 
   onSearch() {
-    this.searchService.fetchUser(this.buscarName).subscribe(data => {
-      this.bridgeService.sendMessage(data);
-      this.router.navigate(["/dashboard", data.name])
-    });
+    this.router.navigate(["/dashboard", this.form.get("nombre").value]).then(()=> window.location.reload());
+   
+   
   }
 
   onTip() {
-    console.log(this.buscarName);
+    console.log(this.form.get("nombre"));
   }
 
 
