@@ -15,8 +15,7 @@ export class DashboardComponent implements OnInit {
   constructor(private bridgeService:PassDataUserService, 
               private userInformationService:SearchService,
               private route:ActivatedRoute) {
-    bridgeService.currentMessage.subscribe(userData=>{this.user=userData;});
-    //en caso de que no venga de la pagina principal lo cargamos desde este componente
+
     if(typeof this.user === 'undefined'||!this.user){
       
       this.userInformationService.fetchUser( {nombre:this.route.snapshot.paramMap.get("nombre").toString()})

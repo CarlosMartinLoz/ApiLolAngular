@@ -15,7 +15,8 @@ export class PassDataUserService {
     this.currentMessage= this.dataBridge.asObservable();
   }
 
-  sendMessage(user:User){
+  sendMessage(user:User){ 
     this.dataBridge.next(user);
   }
+ 
 }
