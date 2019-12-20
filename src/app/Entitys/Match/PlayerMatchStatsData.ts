@@ -3,4 +3,5 @@ export default class PlayerMatchStatsData{
     kills:number;
     assists:number;
     deaths:number;
+    win:boolean;
 }

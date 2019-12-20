@@ -10,17 +10,8 @@ import User from 'src/app/Entitys/User';
 export class PerfilComponent implements OnInit {
   @Input() user:User;
 
-  doughnut: any;
-  data = {
-    datasets: [{
-        data: [10, 20, 30]
-    }],
-    labels: [
-        'Red',
-        'Yellow',
-        'Blue'
-    ]
-};
+  doughnut:Chart;
+ 
   constructor() { 
   
   }

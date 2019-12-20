@@ -9,4 +9,5 @@ export default class User{
     id:string;
     champions:Champion[];
     rankStats:RankStats
+    
 }

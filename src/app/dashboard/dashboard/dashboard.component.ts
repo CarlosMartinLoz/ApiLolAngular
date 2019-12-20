@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
       
       this.userInformationService.fetchUser( {nombre:this.route.snapshot.paramMap.get("nombre").toString()})
               .subscribe(data=>{this.user=data;
-              console.log(data)});
+              console.log("FETCH"+this.user.name+" "+this.user.accountId)});
     }
    }
 
